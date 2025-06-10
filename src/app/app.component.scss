@@ -1,7 +1,11 @@
 .attribution { text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
+body, main {
+  display: block;
+  min-height: calc( 100vh - 3rem );
+}
+
 footer {
-  position: absolute;
-  bottom: 1rem; left: 0; right: 0;
+  height: 3rem;
 }

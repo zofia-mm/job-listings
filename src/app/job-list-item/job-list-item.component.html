@@ -1,1 +1,25 @@
-<p> {{ job.position }} </p>
+<div>
+
+  <img src="{{ job.logo }}">
+
+  <div>
+    <div>
+      {{ job.company }}
+      {{ "new: " + job.new }}
+      {{ "featured: " + job.featured }}
+    </div>
+    {{ job.position }}
+    <div>
+      {{ job.postedAt }}
+      {{ job.contract }}
+      {{ job.location }}
+    </div>
+  </div>
+
+  <div>
+    {{ job.tools }}
+    {{ job.languages }}
+    {{ job.level }}
+  </div>
+
+</div>

@@ -1,5 +1,5 @@
 export enum Role {
-  Frontend,
-  Fullstack,
-  Backend
+  Frontend = "Frontend",
+  Fullstack = "Fullstack",
+  Backend = "Backend"
 }

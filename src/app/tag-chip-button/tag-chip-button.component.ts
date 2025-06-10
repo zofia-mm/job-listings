@@ -14,5 +14,5 @@ type Taggable = Languages | Level | Tools | Role;
   styleUrl: './tag-chip-button.component.scss'
 })
 export class TagChipButtonComponent {
-  @Input({ required: true }) text!: Taggable;
+  @Input({ required: true }) taggable!: Taggable;
 }

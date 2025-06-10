@@ -1,5 +1,5 @@
 export enum Level {
-  Senior,
-  Midweight,
-  Junior
+  Senior = "Senior",
+  Midweight = "Midweight",
+  Junior = "Junior"
 }

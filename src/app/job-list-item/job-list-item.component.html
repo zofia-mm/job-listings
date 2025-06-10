@@ -19,21 +19,17 @@
 
 <div class="tags">
   <app-tag-chip-button
-    [text]="job.role"
-  > 
+    [taggable]="job.role"> 
   </app-tag-chip-button>
   <app-tag-chip-button
-    [text]="job.level"
-  > 
+    [taggable]="job.level"> 
   </app-tag-chip-button>
     <app-tag-chip-button
     *ngFor="let language of job.languages"
-    [text]="language"
-  > 
+    [taggable]="language"> 
   </app-tag-chip-button>
     <app-tag-chip-button
     *ngFor="let tool of job.tools"
-    [text]="tool"
-  > 
+    [taggable]="tool"> 
   </app-tag-chip-button>
 </div>

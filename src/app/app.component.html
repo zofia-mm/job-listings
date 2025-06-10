@@ -1,5 +1,37 @@
 <header>
 
+  <div class="tag-group">
+    Role:
+    <app-tag-chip-button
+      *ngFor="let role of Role | keyvalue"
+      [taggable]="role.value">
+    </app-tag-chip-button>
+  </div>
+
+  <div class="tag-group">
+    Level:
+    <app-tag-chip-button
+      *ngFor="let level of Level | keyvalue"
+      [taggable]="level.value">
+    </app-tag-chip-button>
+  </div>
+
+  <div class="tag-group">
+    Languages:
+    <app-tag-chip-button
+      *ngFor="let language of Languages | keyvalue"
+      [taggable]="language.value">
+    </app-tag-chip-button>
+  </div>
+
+  <div class="tag-group">
+    Tools:
+    <app-tag-chip-button
+      *ngFor="let tool of Tools | keyvalue"
+      [taggable]="tool.value">
+    </app-tag-chip-button>
+  </div>
+
 </header>
 <main>
 

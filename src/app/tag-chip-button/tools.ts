@@ -1,7 +1,7 @@
 export enum Tools {
-  React,
-  Sass,
-  RoR,
-  Vue,
-  Django
+  React = "React",
+  Sass = "Sass",
+  RoR = "Ror",
+  Vue = "Vue",
+  Django = "Django"
 }

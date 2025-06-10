@@ -8,6 +8,7 @@ import { Level } from './tag-chip-button/level';
 import { Role } from './tag-chip-button/role';
 import { Languages } from './tag-chip-button/languages';
 import { Tools } from './tag-chip-button/tools';
+import { Highlight } from './tag-chip-button/highlight';
 
 @Component({
   selector: 'app-root',
@@ -23,6 +24,7 @@ export class AppComponent implements OnInit {
   Level = Level;
   Languages = Languages;
   Tools = Tools;
+  Highlight = Highlight;
 
   public jobList: Job[] = [];
   constructor( 

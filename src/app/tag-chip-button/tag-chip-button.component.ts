@@ -3,8 +3,9 @@ import { Languages } from './languages';
 import { Level } from './level';
 import { Tools } from './tools';
 import { Role } from './role';
+import { Highlight } from './highlight';
 
-type Taggable = Languages | Level | Tools | Role;
+type Taggable = Languages | Level | Tools | Role | Highlight;
 
 @Component({
   selector: 'app-tag-chip-button',

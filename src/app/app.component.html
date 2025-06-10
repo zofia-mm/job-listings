@@ -1,6 +1,14 @@
 <header>
 
   <div class="tag-group">
+    Highlighted:
+    <app-tag-chip-button
+      *ngFor="let hightlight of Highlight | keyvalue"
+      [taggable]="hightlight.value">
+    </app-tag-chip-button>
+  </div>
+
+  <div class="tag-group">
     Role:
     <app-tag-chip-button
       *ngFor="let role of Role | keyvalue"

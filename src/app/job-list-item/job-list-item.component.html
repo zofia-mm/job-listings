@@ -18,7 +18,22 @@
 </div>
 
 <div class="tags">
-  {{ job.tools }}
-  {{ job.languages }}
-  {{ job.level }}
+  <app-tag-chip-button
+    [text]="job.role"
+  > 
+  </app-tag-chip-button>
+  <app-tag-chip-button
+    [text]="job.level"
+  > 
+  </app-tag-chip-button>
+    <app-tag-chip-button
+    *ngFor="let language of job.languages"
+    [text]="language"
+  > 
+  </app-tag-chip-button>
+    <app-tag-chip-button
+    *ngFor="let tool of job.tools"
+    [text]="tool"
+  > 
+  </app-tag-chip-button>
 </div>

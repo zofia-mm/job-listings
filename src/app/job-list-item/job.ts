@@ -1,3 +1,8 @@
+import { Languages } from "../tag-chip-button/languages";
+import { Level } from "../tag-chip-button/level";
+import { Role } from "../tag-chip-button/role";
+import { Tools } from "../tag-chip-button/tools";
+
 export interface Job {
   id: number,
   company: String,
@@ -5,11 +10,11 @@ export interface Job {
   new: boolean,
   featured: boolean,
   position: String,
-  role: String,
-  level: String,
+  role: Role,
+  level: Level,
   postedAt: String,
   contract: String,
   location: String,
-  languages: String[],
-  tools: String[]
+  languages: Languages[],
+  tools: Tools[]
 }
